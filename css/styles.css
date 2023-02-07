@@ -18,9 +18,14 @@ Body{
     background-color: #1f2937;
     color: #fff;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 10%;
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
 
 
 ul{
@@ -34,6 +39,24 @@ li{
 
 h1{
     font-size: 48px;
+    margin-bottom: 15px;
+    
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #3882F6;
+    color: #fff;
+}
+
+
+button:hover{
+
+    background-color: #2777f7;
 }
 
 .logo{
@@ -61,23 +84,64 @@ h1{
 
 }
 
-.one > p{
-    font-size: 18px;
+.one{
+    display: flex;
 }
 
+.one  p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.one img{
+    width: 100%;
+    flex-shrink: 0;
+}
 .two, .four{
     background-color: #fff;
     color: #1f2937;
 }
 
+.two img{
+    width: 100%;
+
+    flex: 1;
+   
+}
+
 .two{
     text-align: center;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
+}
+
+.item{
+    width: 80%;
+    height: auto;
+    padding: 8px;
+    
 }
 
 .three{
     background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: lighter;
+    font-family: 'Roboto italic';
+
+}
+
+.credit{
+    align-self: flex-end;
+    font-weight: 800;
+    color: #1f2937;
 }
 
 .footer{
@@ -87,4 +151,47 @@ h1{
     align-items: center;
     padding: 25px;
     font-size: 12px;
+}
+
+
+.sub-one, .sub-two{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+    /* width: 50%; */
+}
+
+.sub-three{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+
+.four{
+    padding: 25px;
+    display: flex;
+}
+
+.sub-four{
+    background: #3882F6;
+    display: flex;
+    padding: 25px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 25px 0 ;
+    width: 60%;
+    justify-content: space-between;
+     
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.white{
+    border: 1px solid #fff;
 }
